@@ -1,0 +1,91 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Custom Styles
+
+.container{
+  max-width:1440px;
+  min-width:1020px;
+}
+.top{
+  width:100%;
+  height:50px;
+  border:solid;
+  border-width:1px;
+  background-color:rgb(245, 245, 245);
+}
+
+.icon1 {
+  margin-left:230px;
+}
+
+.marginTopper{
+  height:20px;
+  width:100%;
+}
+
+
+.sideBar{
+  margin-left:230px;
+  float:left;
+  height:100%;
+  width:230px;
+  border:solid;
+  border-width:1px;
+  }
+
+.profilePic{
+  height:230px;
+  width:230px;
+  border-radius:8px;
+
+}
+
+.myName{
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.userName{
+  color:rgb(102, 102, 116);
+  font-size:20px;
+  font-weight:lighter;
+  margin-bottom:20px;
+}
+
+.myInfo{
+  color:black;
+  font-size:15px;
+  height:100px;
+  width:230px;
+  border:solid;
+  border-width:1px;
+  border-color:rgb(238, 238, 238);
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+
+.profileList{
+  padding-left:0px;
+  list-style:none;
+}
+.company{
+  clear:right;
+}
+
+.social{
+  overflow:hidden;
+  height:75px;
+  width:230px;
+  border-top:solid;
+  border-bottom:solid;
+  border-width:1px;
+}
+
+.orgsBox{
+  border:solid;
+  border-width:1px;
+  height:120px;
+  width:230px;
+}

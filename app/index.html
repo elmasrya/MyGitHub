@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>GitHub</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <div class="container">
+
+    <div class="top">
+      <span class="mega-octicon octicon-mark-github icon1"></span>
+      <input type="text" class="" data-hotkey="s" name="q" placeholder="Search GitHub"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search" tabindex="1" autocapitalize="off">
+      <a class="header-nav-link" href="/explore" data-ga-click="Header, go to explore, text:explore">Explore</a>
+      <a class="header-nav-link" href="https://gist.github.com" data-ga-click="Header, go to gist, text:gist">Gist</a>
+      <a class="header-nav-link" href="/blog" data-ga-click="Header, go to blog, text:blog">Blog</a>
+      <span class="octicon octicon-sign-out"></span>
+      <span class="octicon octicon-gear"></span>
+      <span class="mega-octicon octicon-plus"></span>
+
+      <span class="octicon octicon-triangle-down"></span>
+      <span class="mega-octicon octicon-inbox"></span>
+
+
+
+    </div>
+      <div class="marginTopper">
+      </div>
+
+  <div class="sideBar">
+    <script type="text/template" id="requiresUserApi">
+    <!--The live information in this section is coming from the User API-->
+        <img class="profilePic" src="<%= avatar_url  %>"/>
+        <h2 class=myName><%= name %></h2>
+        <span class=userName>elmasrya<span>
+<!--..............................................-->
+
+    <div class=myInfo>
+      <ul class="profileList">
+        <li><span class="octicon octicon-organization"></span>
+        <span class="company">Company: <%= company %></span></li>
+        <li><span class="octicon octicon-mail"></span>
+        <a class="email" href="andrewelmasry@gmail.com"><%=email %><a></li>
+        <li><span class="octicon octicon-clock"></span>
+        <span><%=created_at%></span></li>
+      </ul>
+    </div>
+
+<!--..............................................-->
+
+    <div class="social">
+      <span class"fNumber"><%=followers %></span>
+      <span class"fingNumber"><%=following %></span>
+      <span class"following"><%=following %></span>
+      <br></br>
+      <span class"follower">Followers</span>
+      <span class"following">Following</span>
+      <span class"following">Starred</span>
+    </div>
+
+    <!--This is the end of the section that requires userApi-->
+<!--...........................................-->
+  </script>
+  </div><!--end of sidebar-->
+  <div class="orgsBox">
+  <span class="orgsTitle">Organizations</span>
+  <script type="text/template" id="requiresOrgsApi">
+  <img class=orgsPic src="<% avatar_url %>"/>
+    </script>
+  </div><!--end of the orgsBox-->
+
+
+
+
+
+
+
+
+</div><!--end of container-->
+
+
+
+
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <script src="scripts/token.js"></script>
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
