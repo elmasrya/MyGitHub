@@ -27,67 +27,93 @@
     <div class="container">
 
     <div class="top">
-      <span class="mega-octicon octicon-mark-github icon1"></span>
-      <input type="text" class="" data-hotkey="s" name="q" placeholder="Search GitHub"
-      data-global-scope-placeholder="Search GitHub"
-      data-repo-scope-placeholder="Search" tabindex="1" autocapitalize="off">
-      <a class="header-nav-link" href="/explore" data-ga-click="Header, go to explore, text:explore">Explore</a>
-      <a class="header-nav-link" href="https://gist.github.com" data-ga-click="Header, go to gist, text:gist">Gist</a>
-      <a class="header-nav-link" href="/blog" data-ga-click="Header, go to blog, text:blog">Blog</a>
-      <span class="octicon octicon-sign-out"></span>
-      <span class="octicon octicon-gear"></span>
-      <span class="mega-octicon octicon-plus"></span>
+      <script type="text/template" id="topUserApi">
 
-      <span class="octicon octicon-triangle-down"></span>
-      <span class="mega-octicon octicon-inbox"></span>
+      <span class="mega-octicon octicon-mark-github logo"></span>
+      <input type="text" class="searchBar" placeholder="Search GitHub">
+      <a class="header-link">Explore</a>
+      <a class="header-link">Gist</a>
+      <a class="header-link">Blog</a>
+      <a class="header-link helpLink">Help</a>
 
+      <img class="topPic" src="<%= avatar_url  %>"/>
 
-
-    </div>
-      <div class="marginTopper">
+      <span class=topUserName><%= login %></span>
+      <div class="plusTri">
+        <span class="mega-octicon octicon-plus plus"></span>
+        <span class="octicon octicon-triangle-down downTri"></span>
       </div>
+      <span class="mega-octicon octicon-inbox inbox"></span>
+      <span class="octicon octicon-gear gear"></span>
+
+      <span class="octicon octicon-sign-out signOut"></span>
+
+
+      </script>
+    </div>
 
   <div class="sideBar">
-    <script type="text/template" id="requiresUserApi">
+    <script type="text/template" id="sideBarUserApi">
     <!--The live information in this section is coming from the User API-->
         <img class="profilePic" src="<%= avatar_url  %>"/>
         <h2 class=myName><%= name %></h2>
-        <span class=userName>elmasrya<span>
+        <span class=userName><%= login %></span>
 <!--..............................................-->
 
     <div class=myInfo>
       <ul class="profileList">
-        <li><span class="octicon octicon-organization"></span>
+        <li><span class="octicon octicon-organization companyIcon"></span>
         <span class="company">Company: <%= company %></span></li>
-        <li><span class="octicon octicon-mail"></span>
+        <li><span class="octicon octicon-mail emailIcon"></span>
         <a class="email" href="andrewelmasry@gmail.com"><%=email %><a></li>
-        <li><span class="octicon octicon-clock"></span>
-        <span><%=created_at%></span></li>
+        <li><span class="octicon octicon-clock dateJoinedIcon"></span>
+        <span class="dateJoined"><%=created_at%></span></li>
       </ul>
     </div>
 
 <!--..............................................-->
 
     <div class="social">
-      <span class"fNumber"><%=followers %></span>
-      <span class"fingNumber"><%=following %></span>
-      <span class"following"><%=following %></span>
+      <span class="fNumber"><%=followers %></span>
+      <span class="fingNumber"><%=following %></span>
+      <span class="following2"><%=following %></span>
       <br></br>
-      <span class"follower">Followers</span>
-      <span class"following">Following</span>
-      <span class"following">Starred</span>
+      <span class="follower">Follower</span>
+      <span class="following">Following</span>
+      <span class="following">Starred</span>
     </div>
+
+    <div class="orgsBox">
+    <span class="orgsTitle">Organizations</span>
+    <script type="text/template" id="requiresOrgsApi">
+    <img class=orgsPic src="<% avatar_url %>"/>
+      </script>
+    </div><!--end of the orgsBox-->
 
     <!--This is the end of the section that requires userApi-->
 <!--...........................................-->
   </script>
-  </div><!--end of sidebar-->
-  <div class="orgsBox">
-  <span class="orgsTitle">Organizations</span>
-  <script type="text/template" id="requiresOrgsApi">
-  <img class=orgsPic src="<% avatar_url %>"/>
-    </script>
-  </div><!--end of the orgsBox-->
+</div><!--end of sidebar-->
+  <div class="middleTop">
+        <div class="contTab">
+          <span class="mega-octicon octicon-diff-added contIcon"></span>
+          <span class="contText">Contributions</span>
+        </div>
+
+        <div class="repoTab">
+          <span class="mega-octicon octicon-repo repoIcon"></span>
+          <span class="repoText">Repositories</span>
+        </div>
+
+        <div class="publicTab">
+          <span class="mega-octicon octicon-rss publicIcon"></span>
+          <span class="publicText">Public activity</span>
+          <div class="edit">
+            <span class="octicon octicon-pencil editIcon"></span>
+            <span class="editText">Edit Profile</span>
+          </div>
+        </div>
+  </div>
 
 
 

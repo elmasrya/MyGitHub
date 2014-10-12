@@ -5,30 +5,117 @@
 // Custom Styles
 
 .container{
-  max-width:1440px;
-  min-width:1020px;
+  max-width:1438px;
+  min-width:1438px;
 }
 .top{
-  width:100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   height:50px;
   border:solid;
   border-width:1px;
+  border-color:rgb(229, 229, 229);
   background-color:rgb(245, 245, 245);
 }
 
-.icon1 {
+.logo {
   margin-left:230px;
+  margin-right:10px;
+  float: left;
+  width: 28px;
+  height: 28px;
+  font-size: 28px;
 }
 
-.marginTopper{
-  height:20px;
-  width:100%;
+.searchBar{
+  float:left;
+  width:300px;
+  border-radius:4px;
+  margin-right:20px;
 }
+
+.header-link{
+  float:left;
+  padding: 4px 8px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  color: rgb(51, 51, 51);
+}
+
+.helpLink{
+  margin-right:160px;
+
+}
+
+.topPic{
+  margin-top:2px;
+  margin-right:6px;
+  float:left;
+  height:20px;
+  width:20px;
+  border-radius:3px;
+}
+
+.topUserName{
+  color: rgb(51, 51, 51);
+  float:left;
+  margin-top:5px;
+  margin-right:20px;
+  font-size: 13px;
+  font-weight: bold;
+
+}
+
+.plus {
+  margin-top:2.5px;
+  margin-right:2.5px;
+  color: rgb(51, 51, 51);
+  font-size:18px;
+  float:left;
+
+}
+
+.downTri {
+  margin-top:7.25px;
+  font-size:10.5px;
+  float:left;
+  margin-right:17px;
+}
+
+.plusTri{
+
+}
+
+
+.inbox {
+  margin-top:2.5px;
+  margin-right:20px;
+  color: rgb(51, 51, 51);
+  font-size:20px;
+  float:left;
+}
+
+.gear{
+  color: rgb(51, 51, 51);
+  margin-top:5px;
+  margin-right:20px;
+  float:left;
+}
+
+.signOut {
+  color: rgb(51, 51, 51);
+  margin-top:5px;
+  float:left;
+}
+
 
 
 .sideBar{
-  margin-left:230px;
   float:left;
+  margin-top:20px;
+  margin-left:230px;
+  margin-right:20px;
   height:100%;
   width:230px;
   border:solid;
@@ -70,22 +157,197 @@
   padding-left:0px;
   list-style:none;
 }
+
+.companyIcon{
+  color:rgb(204, 204, 204);
+}
+
 .company{
   clear:right;
 }
 
+.emailIcon{
+  color:rgb(204, 204, 204);
+
+}
+
+.email{
+  color:rgb(65, 134, 205);
+  text-decoration:none;
+
+}
+
+.dateJoinedIcon{
+  color:rgb(204, 204, 204);
+
+}
+
+.dateJoined{
+
+}
 .social{
   overflow:hidden;
-  height:75px;
   width:230px;
   border-top:solid;
   border-bottom:solid;
   border-width:1px;
 }
 
+.fNumber{
+  float:left;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top:14px;
+  color:rgb(65, 131, 196);
+}
+
+.fingNumber{
+  float:left;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top:14px;
+  color:rgb(65, 131, 196);
+}
+
+.following2{
+  float:left;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top:14px;
+  color:rgb(65, 131, 196);
+}
+
+.follower{
+  clear:both;
+  font-size:11px;
+
+}
+
+.following{
+  font-size:11px;
+
+}
+
+.following{
+  font-size:11px;
+
+}
 .orgsBox{
   border:solid;
   border-width:1px;
   height:120px;
   width:230px;
+}
+
+.middleTop{
+  float:left;
+  min-width:731px;
+  height:40px;
+  margin-top:29px;
+}
+
+
+.contTab{
+  padding-left:14px;
+  padding-bottom:9px;
+  padding-top:9px;
+  padding-right:12px;
+  border-bottom:solid;
+  border-width:1px;
+  border-color:rgb(221, 221, 221);
+  display:inline;
+  color:rgb(102, 102, 102);
+
+}
+
+.contIcon{
+  font-size:16px;
+  color:rgb(102, 102, 102);
+}
+
+.contText{
+  font-size:14px;
+
+}
+
+.repoTab{
+  padding-bottom:10px;
+  padding-top:9px;
+  padding-left:12px;
+  padding-right:13px;
+  border-top:solid;
+  border-left:solid;
+  border-right:solid;
+  border-width:1px;
+  border-radius:3px;
+  border-color:rgb(221, 221, 221);
+  display:inline;
+
+}
+
+.repoIcon{
+  font-size:17px;
+
+}
+
+.repoText{
+  font-size:14px;
+
+
+}
+
+.publicTab{
+  width:300px;
+  margin-top:20px;
+  padding-bottom:9px;
+  padding-top:9px;
+  padding-left:17px;
+  border-bottom:solid;
+  border-width:1px;
+  border-color:rgb(221, 221, 221);
+  display:inline;
+  color:rgb(102, 102, 102);
+
+}
+
+.publicIcon{
+  font-size:17px;
+  color:rgb(102, 102, 102);
+
+}
+
+.publicText{
+  margin-right:250px;
+  font-size:14px;
+  color:rgb(102, 102, 102);
+
+}
+
+.edit{
+  padding-top:4px;
+  padding-left:9px;
+  padding-right:10px;
+  padding-bottom:4px;
+  background-color:rgb(246, 246, 246);
+  border:solid;
+  border-width:1px;
+  border-radius:3px;
+  border-color:rgb(213, 213, 213);
+  display:inline;
+}
+
+.editIcon{
+  color:rgb(51, 51, 51);
+
+}
+
+.editText{
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+  color:rgb(51, 51, 82);
+}
+
+.repoSearch{
 }
