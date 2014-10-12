@@ -29,9 +29,14 @@
 
 .searchBar{
   float:left;
-  width:300px;
+  width:360px;
+  height:28px;
+  font-size:12px;
   border-radius:4px;
-  margin-right:20px;
+  margin-right:10px;
+  padding-left:9px;
+  border-color:rgb(204, 204, 204);
+  border-width:1px;
 }
 
 .header-link{
@@ -44,13 +49,13 @@
 }
 
 .helpLink{
-  margin-right:160px;
+  margin-right:157px;
 
 }
 
 .topPic{
-  margin-top:2px;
-  margin-right:6px;
+  margin-top:4px;
+  margin-right:4px;
   float:left;
   height:20px;
   width:20px;
@@ -99,7 +104,7 @@
 .gear{
   color: rgb(51, 51, 51);
   margin-top:5px;
-  margin-right:20px;
+  margin-right:19px;
   float:left;
 }
 
@@ -113,8 +118,8 @@
 
 .sideBar{
   float:left;
-  margin-top:20px;
-  margin-left:230px;
+  margin-top:19px;
+  margin-left:232px;
   margin-right:20px;
   height:100%;
   width:230px;
@@ -130,15 +135,18 @@
 }
 
 .myName{
-  margin-top:0px;
+  font-size:25px;
+  letter-spacing:.5px;
+  margin-top:2px;
   margin-bottom:0px;
 }
 
 .userName{
+  float:left;
   color:rgb(102, 102, 116);
   font-size:20px;
   font-weight:lighter;
-  margin-bottom:20px;
+  padding-bottom:17px;
 }
 
 .myInfo{
@@ -198,6 +206,7 @@
   font-size: 28px;
   font-weight: bold;
   margin-top:14px;
+  margin-left:3px;
   color:rgb(65, 131, 196);
 }
 
