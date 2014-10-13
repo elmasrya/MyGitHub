@@ -49,79 +49,134 @@
 
 
       </script>
-    </div>
+    </div><!--.......end of top...........-->
 
   <div class="sideBar">
-    <script type="text/template" id="sideBarUserApi">
     <!--The live information in this section is coming from the User API-->
+
       <div class="profileUser">
+        <script type="text/template" id="userProfileApi">
         <img class="profilePic" src="<%= avatar_url  %>"/>
         <h2 class=myName><%= name %></h2>
         <span class=userName><%= login %></span>
-      <div>
+        </script>
+      </div><!--.......end of profileUser...........-->
+
 <!--..............................................-->
 
     <div class=myInfo>
+      <script type="text/template" id="userInfoApi">
       <ul class="profileList">
-        <li><span class="octicon octicon-organization companyIcon"></span>
-        <span class="company"><%= company %></span></li>
-        <li><span class="octicon octicon-mail emailIcon"></span>
-        <a class="email" href="andrewelmasry@gmail.com"><%=email %><a></li>
-        <li><span class="octicon octicon-clock dateJoinedIcon"></span>
-        <span class="dateJoined"><%=created_at%></span></li>
+
+        <li class="companyRow"><span class="octicon octicon-organization companyIcon"></span>
+        <span class="company"><%= company %></span>
+        </li>
+
+        <li class="locRow"><span class="octicon octicon-location locIcon"></span>
+        <span class="loc"><%= location %></span>
+        </li>
+
+        <li class="emailRow"><span class="octicon octicon-mail emailIcon"></span>
+        <a class="email" href="andrewelmasry@gmail.com"><%=email %><a>
+        </li>
+
+        <li class="blogRow"><span class="octicon octicon-link blogIcon"></span>
+        <span class="blog"><%= blog %></span>
+        </li>
+
+        <li class="dateRow"><span class="octicon octicon-clock dateJoinedIcon"></span>
+        <span class="dateJoined"><%=created_at%></span>
+        </li>
+
       </ul>
-    </div>
+      </script>
+
+    </div><!--.......end of myInfo...........-->
 
 <!--..............................................-->
 
     <div class="social">
-      <span class="fNumber"><%=followers %></span>
-      <span class="fingNumber"><%=following %></span>
-      <span class="following2"><%=following %></span>
-      <br></br>
-      <span class="follower">Follower</span>
-      <span class="following">Following</span>
-      <span class="following">Starred</span>
-    </div>
+      <div class="counts">
+        <span class="count1">
+        <script type="text/template" id="userSocialApi">
+        <%=followers %>
+        </script>
+        </span>
+
+        <span class="count2">
+        <script type="text/template" id="starredApi">
+        <%=stargazers_count %>
+        </script>
+        </span>
+
+        <span class="count3">
+        <script type="text/template" id="userSocialApi2">
+        <%=following %>
+        </script>
+        </span>
+
+      </div>
+
+      <div class="labels">
+        <span class="label1">Follower</span>
+        <span class="label2">Starred</span>
+        <span class="label3">Following</span>
+      </div>
+    </div><!--.......end of social..........-->
+<!--</script>-->
 
     <div class="orgsBox">
-    <span class="orgsTitle">Organizations</span>
-    <script type="text/template" id="requiresOrgsApi">
-    <img class=orgsPic src="<% avatar_url %>"/>
+      <script type="text/template" id="orgsApi">
+      <span class="orgsTitle">Organizations</span>
+      <img class="orgsPic" src="<%= avatar_url  %>"/>
       </script>
-    </div><!--end of the orgsBox-->
+    </div>
 
-    <!--This is the end of the section that requires userApi-->
-<!--...........................................-->
-  </script>
+
+
 </div><!--end of sidebar-->
+<!--...........................................-->
+
   <div class="middleTop">
+      <!--..................................-->
         <div class="contTab">
           <span class="mega-octicon octicon-diff-added contIcon"></span>
           <span class="contText">Contributions</span>
         </div>
 
+      <!--................................-->
         <div class="repoTab">
           <span class="mega-octicon octicon-repo repoIcon"></span>
           <span class="repoText">Repositories</span>
         </div>
 
+      <!--....................................-->
         <div class="publicTab">
           <span class="mega-octicon octicon-rss publicIcon"></span>
           <span class="publicText">Public activity</span>
           <div class="edit">
             <span class="octicon octicon-pencil editIcon"></span>
-            <span class="editText">Edit Profile</span>
+            <a class="editText" href="google.com">Edit Profile</a>
           </div>
         </div>
+  </div><!--.......end of middleTop.................-->
+
+  <div class="middleRow">
+        <input class="repoSearch" type="text" placeholder="Find a repository..."></input>
+        <div class="sbutton">
+          <a class="sText">Search</a>
+        </div>
+        <a class="all allLinks">All</a>
+        <a class="public allLinks">Public</a>
+        <a class="private allLinks">Private</a>
+        <a class="sources allLinks">Sources</a>
+        <a class="forks allLinks">Forks</a>
+        <a class="mirror allLinks">Mirrors</a>
+      <div class="new">
+          <span class="octicon octicon-repo newIcon"></span>
+          <span class="newText">New</span>
+        </div>
   </div>
-
-
-
-
-
-
-
 
 </div><!--end of container-->
 
