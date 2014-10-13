@@ -134,6 +134,9 @@
 
 }
 
+.profileUser{
+    border:solid;
+}
 .myName{
   font-size:25px;
   letter-spacing:.5px;
@@ -151,14 +154,11 @@
 
 .myInfo{
   color:black;
-  font-size:15px;
   height:100px;
   width:230px;
   border:solid;
   border-width:1px;
   border-color:rgb(238, 238, 238);
-  overflow:hidden;
-  text-overflow: ellipsis;
 }
 
 .profileList{
@@ -171,7 +171,9 @@
 }
 
 .company{
-  clear:right;
+  overflow:auto;
+  text-overflow: ellipsis;
+  font-size:14px;
 }
 
 .emailIcon{
