@@ -2,10 +2,6 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
-// Bourbon & Neat
-@import '../../bower_components/bourbon/dist/bourbon';
-@import '../../bower_components/neat/app/assets/stylesheets/neat';
-
 // Custom Styles
 
 .container{
@@ -566,6 +562,6 @@
   border:solid;
 }
 .repoName{
-  display:bl
+  display:block;
   float:left;
 }
