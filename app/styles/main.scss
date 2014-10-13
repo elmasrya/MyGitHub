@@ -1,0 +1,571 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Custom Styles
+
+.container{
+  max-width:1438px;
+  min-width:1438px;
+}
+.top{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height:50px;
+  border:solid;
+  border-width:1px;
+  border-color:rgb(229, 229, 229);
+  background-color:rgb(245, 245, 245);
+}
+
+.logo {
+  margin-left:230px;
+  margin-right:10px;
+  float: left;
+  width: 28px;
+  height: 28px;
+  font-size: 28px;
+}
+
+.searchBar{
+  float:left;
+  width:360px;
+  height:28px;
+  font-size:12px;
+  border-radius:4px;
+  margin-right:10px;
+  padding-left:8px;
+  border-color:rgb(204, 204, 204);
+  border-width:1px;
+}
+
+.header-link{
+  float:left;
+  padding: 4px 8px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  color: rgb(51, 51, 51);
+}
+
+.helpLink{
+  margin-right:157px;
+
+}
+
+.topPic{
+  margin-top:4px;
+  margin-right:4px;
+  float:left;
+  height:20px;
+  width:20px;
+  border-radius:3px;
+}
+
+.topUserName{
+  color: rgb(51, 51, 51);
+  float:left;
+  margin-top:5px;
+  margin-right:20px;
+  font-size: 13px;
+  font-weight: bold;
+
+}
+
+.plus {
+  margin-top:2.5px;
+  margin-right:2.5px;
+  color: rgb(51, 51, 51);
+  font-size:18px;
+  float:left;
+
+}
+
+.downTri {
+  margin-top:7.25px;
+  font-size:10.5px;
+  float:left;
+  margin-right:17px;
+}
+
+.plusTri{
+
+}
+
+
+.inbox {
+  margin-top:2.5px;
+  margin-right:20px;
+  color: rgb(51, 51, 51);
+  font-size:20px;
+  float:left;
+}
+
+.gear{
+  color: rgb(51, 51, 51);
+  margin-top:5px;
+  margin-right:19px;
+  float:left;
+}
+
+.signOut {
+  color: rgb(51, 51, 51);
+  margin-top:5px;
+  float:left;
+}
+
+
+
+.sideBar{
+  float:left;
+  margin-top:16px;
+  margin-left:230px;
+  margin-right:20px;
+  height:1000px;
+  width:230px;
+  }
+
+.profilePic{
+  height:230px;
+  width:230px;
+  border-radius:8px;
+
+}
+
+.profileUser{
+    float:left;
+}
+
+
+.myName{
+  float:left;
+  font-size:25px;
+  letter-spacing:.5px;
+  margin-top:2px;
+  margin-bottom:0px;
+}
+
+.userName{
+  float:left;
+  color:rgb(102, 102, 116);
+  font-size:20px;
+  font-weight:lighter;
+  padding-bottom:17px;
+}
+
+.myInfo{
+  float:left;
+  font-size:14px;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  color:black;
+  height:144px;
+  width:230px;
+  border-top:solid;
+  border-width:1px;
+  border-color:rgb(238, 238, 238);
+}
+
+
+
+.profileList{
+  float:left;
+  list-style:none;
+  padding-left:0px;
+}
+.companyRow{
+  margin-top:0px;
+}
+.companyIcon{
+  margin-left:3px;
+  margin-right:5px;
+  color:rgb(204, 204, 204);
+}
+
+.locIcon{
+  margin-left:4px;
+  margin-right:8px;
+  color:rgb(204, 204, 204);
+}
+
+
+.locRow{
+  margin-top:7px;
+
+}
+
+.loc{
+  color:rgb(65, 134, 205);
+  text-decoration:none;
+
+}
+
+.emailRow{
+  margin-top:7px;
+}
+
+
+.emailIcon{
+  margin-left:3px;
+  margin-right:5px;
+  color:rgb(204, 204, 204);
+}
+
+
+.email{
+  color:rgb(65, 134, 205);
+  text-decoration:none;
+}
+
+.blogRow{
+  margin-top:7px;
+}
+
+
+.blogIcon{
+  margin-right:6px;
+  color:rgb(204, 204, 204);
+}
+
+
+.blog{
+  color:rgb(65, 134, 205);
+  text-decoration:none;
+}
+
+
+.dateRow{
+  margin-top:7px;
+}
+
+.dateJoinedIcon{
+  margin-right:5px;
+  color:rgb(204, 204, 204);
+
+}
+
+.dateJoined{
+
+}
+
+
+.social{
+  height:75px;
+  overflow:hidden;
+  width:230px;
+  border-top:solid;
+  border-bottom:solid;
+  border-width:1px;
+  border-color:rgb(238, 238, 238);
+}
+
+
+.counts{
+  font-size: 28px;
+  font-weight: bold;
+  color:rgb(65, 131, 196);
+  margin-top:11px;
+  margin-left:2px;
+}
+
+.count1{
+  margin-left:31px;
+}
+
+.count2{
+  margin-left:54px;
+}
+
+.count3{
+  margin-left:53px;
+}
+
+.labels{
+  margin-top:-1px;
+  font-size:11px;
+}
+
+.label1{
+  color:rgb(204, 204, 204);
+  margin-left:20px;
+}
+
+.label2{
+  color:rgb(204, 204, 204);
+  margin-left:35px;
+}
+
+.label3{
+  color:rgb(204, 204, 204);
+  margin-left:32px;
+}
+
+
+.orgsBox{
+  float:left;
+  padding-top:22px;
+  width:220px;
+  height:200px;
+}
+
+.orgsTitle{
+  margin-bottom:17px;
+  margin-left:2px;
+  font-weight:bold;
+}
+
+.orgsPic{
+  margin-top:17px;
+  display:block;
+  height:40px;
+  width:40px;
+}
+
+.middleTop{
+  float:left;
+  clear:right;
+  min-width:731px;
+  height:40px;
+  margin-top:29px;
+}
+
+
+.contTab{
+  padding-left:14px;
+  padding-bottom:9px;
+  padding-top:9px;
+  padding-right:12px;
+  border-bottom:solid;
+  border-width:1px;
+  border-color:rgb(221, 221, 221);
+  display:inline;
+  color:rgb(102, 102, 102);
+
+}
+
+.contIcon{
+  font-size:16px;
+  color:rgb(102, 102, 102);
+}
+
+.contText{
+  font-size:14px;
+
+}
+
+.repoTab{
+  padding-bottom:10px;
+  padding-top:9px;
+  padding-left:12px;
+  padding-right:13px;
+  border-top:solid;
+  border-left:solid;
+  border-right:solid;
+  border-width:1px;
+  border-radius:3px;
+  border-color:rgb(221, 221, 221);
+  display:inline;
+
+}
+
+.repoIcon{
+  font-size:17px;
+
+}
+
+.repoText{
+  font-size:14px;
+
+
+}
+
+.publicTab{
+  width:300px;
+  margin-top:20px;
+  padding-bottom:9px;
+  padding-top:9px;
+  padding-left:17px;
+  border-bottom:solid;
+  border-width:1px;
+  border-color:rgb(221, 221, 221);
+  display:inline;
+  color:rgb(102, 102, 102);
+
+}
+
+.publicIcon{
+  font-size:17px;
+  color:rgb(102, 102, 102);
+
+}
+
+.publicText{
+  margin-right:250px;
+  font-size:14px;
+  color:rgb(102, 102, 102);
+
+}
+
+.edit{
+  padding-top:4px;
+  padding-left:9px;
+  padding-right:10px;
+  padding-bottom:4px;
+  background-color:rgb(246, 246, 246);
+  border:solid;
+  border-width:1px;
+  border-radius:3px;
+  border-color:rgb(213, 213, 213);
+  display:inline;
+}
+
+.editIcon{
+  color:rgb(51, 51, 51);
+
+}
+
+.editText{
+  text-decoration:none;
+  font-size: 13px;
+  font-weight: bold;
+  color:rgb(51, 51, 82);
+}
+
+.repoSearch{
+  float:left;
+  width:260px;
+  height:35px;
+  font-size:13px;
+  border-radius:3px;
+  padding-left:8px;
+  border-color:rgb(204, 204, 204);
+  border-width:1px;
+  margin-right:4px;
+}
+
+.sbutton{
+  float:left;
+  padding-top:6px;
+  padding-left:11px;
+  padding-right:13px;
+  padding-bottom:9px;
+  background-color:rgb(246, 246, 246);
+  border:solid;
+  border-width:1px;
+  border-radius:3px;
+  border-color:rgb(213, 213, 213);
+  display:inline;
+
+}
+
+.sText{
+  text-decoration:none;
+  font-size: 13px;
+  font-weight: bold;
+  color:rgb(51, 51, 82);
+
+}
+
+.middleRow{
+  float:left;
+  border-bottom:solid;
+  border-width:1px;
+  border-color:rgb(221, 221, 221);
+  color:rgb(102, 102, 102);
+  padding-bottom:10px;
+}
+
+.allLinks{
+  margin-top:10px;
+}
+
+.all{
+  font-size:14px;
+  margin-left:35px;
+  text-decoration:none;
+  font-weight:bold;
+  color:black;
+  float:left;
+}
+
+.public{
+  font-size:14px;
+  color:rgb(65, 131, 196);
+  margin-left:12px;
+  float:left;
+}
+
+.private{
+  font-size:14px;
+  color:rgb(65, 131, 196);
+  margin-left:12px;
+  float:left;
+
+}
+
+.sources{
+  font-size:14px;
+  color:rgb(65, 131, 196);
+  margin-left:12px;
+  float:left;
+
+}
+
+.forks{
+  font-size:14px;
+  color:rgb(65, 131, 196);
+  margin-left:12px;
+  float:left;
+}
+
+.mirror{
+  font-size:14px;
+  color:rgb(65, 131, 196);
+  margin-left:12px;
+  float:left;
+}
+
+
+.new{
+  color:white;
+  float:left;
+  margin-left:15px;
+  padding-top:6px;
+  padding-left:8px;
+  padding-right:10px;
+  padding-bottom:9px;
+  background-color:rgb(136, 219, 107);
+  border:solid;
+  border-width:1px;
+  border-radius:3px;
+  border-color:rgb(92, 169, 65);
+  display:inline;
+
+}
+
+.newIcon{
+
+}
+
+.newText{
+  font-size:13px;
+  font-weight:bold;
+  color:white;
+
+}
+
+.repoSec{
+  float:left;
+  width:700px;
+  height:1000px;
+  border:solid;
+}
+.repoName{
+  display:bl
+  float:left;
+}
