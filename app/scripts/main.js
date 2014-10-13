@@ -83,3 +83,19 @@ $.getJSON(orgsUrl).done(
   });
 
 });
+
+/*............REPOS!!!!.....................*/
+/*................................................*/
+
+
+var repoTemplate = $('#repoApi').html();
+var showRepo = _.template(repoTemplate);
+var repoUrl='https://api.github.com/users/elmasrya/repos';
+
+$.getJSON(repoUrl).done(
+  function (user) {
+    user.forEach( function(x) {
+    $('.repoSec').append( showRepo(x));
+  });
+
+});

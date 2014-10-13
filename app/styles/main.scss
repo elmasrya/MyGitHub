@@ -307,15 +307,16 @@
   padding-top:22px;
   width:220px;
   height:200px;
-  border:solid;
 }
 
 .orgsTitle{
+  margin-bottom:17px;
   margin-left:2px;
   font-weight:bold;
 }
 
 .orgsPic{
+  margin-top:17px;
   display:block;
   height:40px;
   width:40px;
@@ -551,5 +552,16 @@
   font-size:13px;
   font-weight:bold;
   color:white;
+
+}
+
+.repoSec{
+  float:left;
+  width:700px;
+  height:1000px;
+  border:solid;
+}
+.repoName{
+  float:left;
 
 }
