@@ -85,7 +85,7 @@
         </li>
 
         <li class="dateRow"><span class="octicon octicon-clock dateJoinedIcon"></span>
-        <span class="dateJoined"><%=created_at%></span>
+        <span class="dateJoined">Joined on <%= $.format.date(created_at, "MMM dd, yyyy")%></span>
         </li>
 
       </ul>
@@ -181,9 +181,14 @@
 
       <div class="repoSec">
         <script type="text/template" id="repoApi">
-        <h3 class="repoName"><%=name %><h3>
-      <!--  <span class="updates"><%=updated_at %></span>
-      -->  </script>
+          <div class=repoTarg>
+          <li class="repoName"><%=name %></li>
+          </div>
+        <span class="updates"><%=updated_at %></span>
+        <span class="forks"><%=forks %></span>
+        <span class="forksCount"><%=forks_count %></span>
+        <span class="StargazersCount"><%=stargazers_count %></span>
+       </script>
       </div>
 
 
@@ -204,6 +209,7 @@
     <script src="scripts/token.js"></script>
 
         <!-- build:js scripts/main.js -->
+        <script src="scripts/jquery-dateFormat.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>

@@ -43,6 +43,7 @@ var showUserSocial = _.template(userSocialTemplate);
 
 $.getJSON(userUrl).done(
   function (user) {
+    user.created_at=moment(user.created_at).fromNow();
     $('.count1').append( showUserSocial(user) );
 });
 
