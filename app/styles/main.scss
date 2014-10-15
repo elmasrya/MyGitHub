@@ -557,12 +557,67 @@
 
 .repoSec{
   float:left;
-  width:700px;
+  width:735px;
   height:1000px;
-  border:solid;
 }
-.repoName{
 
+.repoName{
+  margin-top:33px;
+  font-size: 20px;
+  font-weight: bold;
+  color:rgb(65, 131, 196);
   display:block;
   float:left;
+}
+
+
+.updateTarg{
+  padding-top:10px;
+  color:rgb(143, 136, 136);
+  font-size:13px;
+  list-style:none;
+  clear:left;
+}
+
+.language{
+  color:rgb(143, 136, 136);
+  font-size:13px;
+  font-weight:bold;
+  margin-top:37px;
+  margin-right:10px;
+  float:right;
+}
+
+.stargazersCount{
+  color:rgb(143, 136, 136);
+  font-size:13px;
+  font-weight:bold;
+  margin-top:37px;
+  margin-right:10px;
+  float:right;
+}
+
+.forksCount{
+  color:rgb(143, 136, 136);
+  font-size:13px;
+  font-weight:bold;
+  margin-top:37px;
+  margin-right:10px;
+  float:right;
+}
+
+.repoBorder{
+  height:112px;
+  border-bottom:solid;
+  border-width:1px;
+  border-color:rgb(221, 221, 221);
+
+}
+
+.forkIcon{
+
+}
+
+.star{
+
 }
