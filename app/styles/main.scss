@@ -581,7 +581,7 @@
 
 .language{
   color:rgb(143, 136, 136);
-  font-size:13px;
+  font-size:12px;
   font-weight:bold;
   margin-top:37px;
   margin-right:10px;
@@ -590,7 +590,7 @@
 
 .stargazersCount{
   color:rgb(143, 136, 136);
-  font-size:13px;
+  font-size:12px;
   font-weight:bold;
   margin-top:37px;
   margin-right:10px;
@@ -599,7 +599,7 @@
 
 .forksCount{
   color:rgb(143, 136, 136);
-  font-size:13px;
+  font-size:12px;
   font-weight:bold;
   margin-top:37px;
   margin-right:10px;
@@ -615,9 +615,20 @@
 }
 
 .forkIcon{
+  font-size:12px;
+  font-weight:bold;
+  margin-top:37px;
+  margin-right:10px;
+  float:right;
+  color:rgb(143, 136, 136);
 
 }
 
 .star{
-
+  font-size:12px;
+font-weight:bold;
+margin-top:37px;
+margin-right:2.5px;
+float:right;
+color:rgb(143, 136, 136);
 }
